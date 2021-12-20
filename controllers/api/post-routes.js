@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const { User, Post, Comment } = require('../../models');
+const withAuth = require('../../utils/auth');
 
 //get all posts
 router.get('/', (req, res) => {
@@ -77,7 +78,7 @@ router.get('/:id', (req, res) => {
 });
 
 //create a post
-router.post('/', (req, res) => {
+router.post('/', withAuth, (req, res) => {
     console.log("Creating post...");
     Post.create({
         title: req.body.title,
@@ -91,6 +92,7 @@ router.post('/', (req, res) => {
     });
 });
 
+//update a post
 
 
 module.exports = router;

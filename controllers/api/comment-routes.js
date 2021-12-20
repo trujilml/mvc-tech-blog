@@ -1,5 +1,6 @@
 const router = require('express').Router();
 const { User, Post, Comment } = require('../../models');
+const withAuth = require('../../utils/auth');
 
 //create a comment
 router.get('/', (req, res) => {
@@ -12,7 +13,7 @@ router.get('/', (req, res) => {
 });
 
 //post a comment
-router.post('/', (req, res) => {
+router.post('/', withAuth, (req, res) => {
     if (req.session) {
         Comment.create({
             comment_text: req.body.comment_text,
