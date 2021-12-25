@@ -93,6 +93,29 @@ router.post('/', withAuth, (req, res) => {
 });
 
 //update a post
+router.put('/:id', withAuth, (req, res) => {
+    Post.updated({
+        title: req.body.title,
+        content: req.body.post_content,
+    }, {
+        where: {
+            id: req.params.id,
+        },
+    })   
+    .then(dbPostData => {
+            if (!dbPostData) {
+                res.status(404).json({ message: 'No post found!'});
+                return;
+            }
+            res.json(dbPostData);
+        })
+        .catch(err => {
+            console.log(err);
+            res.status(500).json(err);
+        });
+});
+
+//Delete a post
 
 
 module.exports = router;
