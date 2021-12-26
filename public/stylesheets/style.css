@@ -1,0 +1,27 @@
+:root {
+    --maincolor1: white;
+    --maincolor2: black;
+    --maincolor3: rgb(50, 173, 255);
+}
+
+*  {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    font-family: arial;
+    background-color: var(--maincolor1);
+    color: var(--maincolor2);
+}
+
+main, .site-name {
+    background-color: var(--maincolor3);
+}
