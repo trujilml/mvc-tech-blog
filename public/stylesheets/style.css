@@ -1,10 +1,10 @@
 :root {
     --maincolor1: white;
     --maincolor2: black;
-    --maincolor3: rgb(50, 173, 255);
-    --maincolor4: rgb(8, 117, 189);
+    --maincolor3: rgb(80, 185, 255);
+    --maincolor4: rgb(2, 100, 165);
     --maincolor5: rgba(152, 214, 255, 0.822);
-    --maincolor6: rgba(77, 184, 255, 0.822);
+    --maincolor6: rgba(51, 154, 223, 0.822);
     --maincolor7: rgba(64, 151, 209, 0.849);
     --maincolor8: rgb(238, 238, 238);
     --maincolor9: rgb(182, 3, 3);
@@ -12,6 +12,7 @@
     --maincolor11: rgb(1, 85, 141);
     --maincolor12: rgba(184, 227, 255, 0.637);
     --standardfontstyle1: bold;
+    --standardfontstyle2: italic;
     --standardborderradius: 5px; 
 }
 
@@ -28,7 +29,7 @@ html, body {
     height: 100%;
     padding: 0;
     margin: 0;
-    font-family: arial;
+    font-family: Helvetica, Arial, sans-serif;
     background-color: var(--maincolor3);
     color: var(--maincolor2);
 }
@@ -38,15 +39,28 @@ main, .site-name {
 }
 
 a, .btn-no-style, #comment-subtitle {
-    background-color: var(--maincolor3);
+    text-decoration: none;
+    list-style: none;
 }
 
 a:hover, .btn-no-style:hover {
+    text-decoration: none;
+    color: var(--maincolor4);
+}
+
+a:hover, .btn-no-style:active {
+    text-decoration: none;
+    color: var(--maincolor5);
+}
+
+a:hover, .btn-no-style:visited {
+    text-decoration: none;
     color: var(--maincolor4);
 }
 
 a {
     text-decoration: none;
+    list-style: none;
     font-weight: var(--standardfontstyle1);
     transition: color .1s;
 }
@@ -97,7 +111,7 @@ form > div {
 }
 
 form label {
-    display: block;
+    color: var(--maincolor4);
 }
 
 .wrapper {
@@ -116,11 +130,11 @@ form label {
 }
 
 header, .site-row, .info-section, .form-heading {
-    background-color: var(--maincolor7);
+    background-color: var(--maincolor6);
 }
 
 .login-page, .sign-in-page, .new-form-page, .edit-form-page {
-    border: 3px solid var(--maincolor2);
+    border: 3px solid var(--maincolor4);
 }
 
 .form-heading {
@@ -143,12 +157,12 @@ header {
 }
 
 header h1 {
+    color: var(--maincolor4);
     font-size: 1em; 
 }
 
 .site-row {
     display: flex;
-    border-bottom: 1px solid var(--maincolor8);
     justify-content: center;
 }
 
@@ -156,6 +170,7 @@ header h1 {
     margin-bottom: 10px;
     padding: 0px 10px;
     border-style: double;
+    color: var(--maincolor4);
 }
 
 main {
@@ -170,7 +185,7 @@ main {
     cursor: pointer;
     text-decoration: none;
     font-size: 100%;
-    font-weight: bold;
+    font-weight: var(--standardfontstyle1);
     transition: color .1s;
     margin-left: 16px;
 }
@@ -194,7 +209,7 @@ main {
 }
 
 .post .title span {
-    font-style: italic;
+    font-style: var(--standardfontstyle2);
     font-size: 90%;
     color: var(--maincolor11);
 }
@@ -234,7 +249,7 @@ main {
 
 #comment-subtitle {
     font-size: 12px;
-    font-style: italic;
+    font-style: var(--standardfontstyle2);
 }
 
 .new-post-section {
@@ -247,11 +262,11 @@ main {
 }
 
 .sign-in-link, .login-link {
-    color: var(--maincolor7);
+    color: var(--maincolor4);
 }
 
 .form-heading h1, .form-heading h2 {
-    color: var(--maincolor3);
+    color: var(--maincolor4);
 }
 
 .login-form, .signup-form, .post-content, .post-title-section {

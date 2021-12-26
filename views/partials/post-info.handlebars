@@ -1,17 +1,17 @@
 <article class="post">
-    <div class="full-post">
-        <div class="section"></div>
-            <div class="post-title">
-                <a href="/post/{{id}}" class="link" target="_blank">{{title}}</a>
+    <div class="whole-post">
+        <div class="info-section">
+            <div class="post-name">
+                <a href="/post/{{id}}" class="links">{{title}}</a>
             </div>
-            <div class = "created-by">
-                <p id = "subtitle">
-                    Posted by {{user.username}} on {{formatDate created_at}}
+            <div class="created-by">
+                <p id="comment-subtitle">
+                    Posted by <b>{{user.username}} </b> on <b>{{formatDate created_at}}</b>
                 </p>
             </div>
         </div>
-  <div class="content">
-    <p>{{content}}</p>
-  </div>
-</div>
+        <div class="content-section">
+            <p>{{content}}</p>
+        </div>
+    </div>
 </article>
