@@ -2,6 +2,13 @@
     --maincolor1: white;
     --maincolor2: black;
     --maincolor3: rgb(50, 173, 255);
+    --maincolor4: rgb(8, 117, 189);
+    --maincolor5: rgba(152, 214, 255, 0.822);
+    --maincolor6: rgba(77, 184, 255, 0.822);
+    --maincolor7: rgba(64, 151, 209, 0.849);
+    --maincolor8: rgb(238, 238, 238);
+    --standardfontstyle1: bold;
+    --standardborderradius: 5px; 
 }
 
 *  {
@@ -18,10 +25,125 @@ html, body {
     padding: 0;
     margin: 0;
     font-family: arial;
-    background-color: var(--maincolor1);
+    background-color: var(--maincolor3);
     color: var(--maincolor2);
 }
 
 main, .site-name {
     background-color: var(--maincolor3);
+}
+
+a, .btn-no-style, #comment-subtitle {
+    background-color: var(--maincolor3);
+}
+
+a:hover, .btn-no-style:hover {
+    color: var(--maincolor4);
+}
+
+a {
+    text-decoration: none;
+    font-weight: var(--standardfontstyle1);
+    transition: color .1s;
+}
+
+button {
+    background-color: var(--maincolor5);
+    border: 0;
+    padding: 1%;
+    color: var(--maincolor1);
+    font-weight: var(--standardfontstyle1);
+    transition: background-color .1s;
+    cursor: pointer;
+    border-radius: var(--standardborderradius);
+}
+
+button:hover {
+    background-color: var(--maincolor6);
+}
+
+.post-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.go-back {
+    color: var(--maincolor7);
+}
+
+textarea, input {
+    padding: .5%;
+    border-radius: var(--standardborderradius);
+    border: 1px solid var(--maincolor1);
+}
+
+textarea:focus, input:focus {
+    outline: none;
+    border: 1px solid var(--maincolor8);
+}
+
+textarea {
+    min-width: 40%;
+    min-height: 100px;
+}
+
+form > div {
+    margin-bottom: 2%;
+}
+
+form label {
+    display: block;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-section {
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header, .site-row, .info-section, .form-heading {
+    background-color: var(--maincolor7);
+}
+
+.login-page, .sign-in-page, .new-form-page, .edit-form-page {
+    border: 3px solid var(--maincolor2);
+}
+
+.form-heading {
+    padding: 10px;
+}
+
+.info-section, .content-section, .form-section, .sign-in-link, .login-link {
+    padding-left: 10px;
+}
+
+.post-name, .post-title-section, .new-page {
+    padding-top: 10px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1%;
+}
+
+header h1 {
+    font-size: 1em; 
+}
+
+.site-row {
+    display: flex;
+    border-bottom: 1px solid var(--maincolor8);
+    justify-content: center;
 }
