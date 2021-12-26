@@ -116,6 +116,26 @@ router.put('/:id', withAuth, (req, res) => {
 });
 
 //Delete a post
+router.delete(':/id', withAuth, (req, res) => {
+    Post.destroy({
+        where: {
+            id: req.params.id,
+        },
+    })
+    .then((dbPostData) => {
+        if(!dbPostData) {
+            res.status(404).json({
+                message: 'No post found!'
+            });
+            return;
+        }
+        res.json(dbPostData);
+    })
+    .catch((err) => {
+        console.log(err);
+        res.status(500).json(err);
+    });
+});
 
 
 module.exports = router;
