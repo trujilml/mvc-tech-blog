@@ -1,34 +1,21 @@
-# mvc-tech-blog
+# MVC Tech Blog
 
-Your Task
-Writing about tech can be just as important as making it. Developers spend plenty of time creating new applications and debugging existing codebases, but most developers also spend at least some of their time reading and writing about technical concepts, recent advancements, and new technologies. A simple Google search for any concept covered in this course returns thousands of think pieces and tutorials from developers of all skill levels!
+![Tech Blog Website - Homepage](./demo/techblog-1.png)
 
-Your challenge this week is to build a CMS-style blog site similar to a Wordpress site, where developers can publish their blog posts and comment on other developers’ posts as well. You’ll build this site completely from scratch and deploy it to Heroku. Your app will follow the MVC paradigm in its architectural structure, using Handlebars.js as the templating language, Sequelize as the ORM, and the express-session npm package for authentication.
+Tech Blog is a blogging website that allows user to publish their own posts about tech, coding, and anything else related to the tech world! This is a CMS-style blog that is built with the MVC (model-view-controller) paradigm with Handlebars.js as the HTML template language, Sequelize as the ORM (object-relational mapping), and the Express-Session npm package for user authentication. 
 
-User Story
-AS A developer who writes about tech
-I WANT a CMS-style blog site
-SO THAT I can publish articles, blog posts, and my thoughts and opinions
+When users first visit the Tech Blog homepage, they are able to view existing blog posts from the users and can navigate to either to the homepage (Home) or to the login page (Login). Clicking on post links when not logged in just present the visible post and comments. Accessing other links will redirect unlogged users to the login page, where registered users can login. New users are able to register to use Tech Blog by clicking on the Sign Up Here button where they will sign up by entering in a username and password. From there, their user credentials are saved and users are now able to access the website.
+
+![Tech Blog Website - Login](./demo/techblog-2.png)
+![Tech Blog Website - Sign-Up](./demo/techblog-3.png)
+
+When signed in, registered users are able to see the navigation links for the homepage (Home), the dashboard (Dashboard), and to log out (Logout).  The homepage presents the existing blog posts with the post title and post date; users can click on the blog post link where the title, post content, creator's username and date is presented. 
+
+
+
 
 Acceptance Criteria
-GIVEN a CMS-style blog site
-WHEN I visit the site for the first time
-THEN I am presented with the homepage, which includes existing blog posts if any have been posted; navigation links for the homepage and the dashboard; and the option to log in
-WHEN I click on the homepage option
-THEN I am taken to the homepage
-WHEN I click on any other links in the navigation
-THEN I am prompted to either sign up or sign in
-WHEN I choose to sign up
-THEN I am prompted to create a username and password
-WHEN I click on the sign-up button
-THEN my user credentials are saved and I am logged into the site
-WHEN I revisit the site at a later time and choose to sign in
-THEN I am prompted to enter my username and password
-WHEN I am signed in to the site
-THEN I see navigation links for the homepage, the dashboard, and the option to log out
-WHEN I click on the homepage option in the navigation
-THEN I am taken to the homepage and presented with existing blog posts that include the post title and the date created
-WHEN I click on an existing blog post
+
 THEN I am presented with the post title, contents, post creator’s username, and date created for that post and have the option to leave a comment
 WHEN I enter a comment and click on the submit button while signed in
 THEN the comment is saved and the post is updated to display the comment, the comment creator’s username, and the date created
@@ -57,14 +44,30 @@ How to Submit the Challenge
 You are required to submit BOTH of the following for review:
 
 The URL of the functional, deployed application. - on Heroku
+https://vast-brushlands-11504.herokuapp.com/
 
 The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
+https://github.com/trujilml/mvc-tech-blog
 
+Programs User
+Heroku 
+JawsDB MySQL - for site deployment and mysql 
+
+    "bcrypt": "^5.0.1",
+    "connect-session-sequelize": "^7.1.2",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.2",
+    "express-handlebars": "^6.0.2",
+    "express-session": "^1.17.2",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.15",
+    "sequelize": "^6.12.2",
+    "session": "^0.1.0"
 
 
 Developer Notes
-Added generated seed files to demonstrate comments, posts, and users on this web application.
+Added generated seed files to demonstrate comments, posts, and users for testing purposes. To generate, run `npm run seeds` in your terminal with Nodemon installated to view the test examples.
 
-Comments can be added and cannot be deleted or edited. will be a future implementation. 
+Comments can be added but cannot be deleted or edited. will be a future implementation. 
 
 
