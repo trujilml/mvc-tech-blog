@@ -2,12 +2,14 @@ const { Post } = require('../models');
 
 const postdata = [
   {
-    post_title: 'Donec posuere metus vitae ipsum.',
-    post_content: 'integer arcu sem, maximus tristique mollis ac, pharetra in purus. Aliquam sed interdum enim, sit amet bibendum ante.'
+    title: 'Donec posuere metus vitae ipsum.',
+    content: 'integer arcu sem, maximus tristique mollis ac, pharetra in purus. Aliquam sed interdum enim, sit amet bibendum ante.',
+    user_id: 4
   },
   {
-    post_title: 'Morbi non quam nec dui luctus rutrum.',
-    post_content: 'Aenean blandit nisi vitae viverra dapibus. Sed diam mi, cursus eu dolor sit amet, blandit sagittis sapien. Donec quis venenatis ligula.'
+    title: 'Morbi non quam nec dui luctus rutrum.',
+    content: 'Aenean blandit nisi vitae viverra dapibus. Sed diam mi, cursus eu dolor sit amet, blandit sagittis sapien. Donec quis venenatis ligula.',
+    user_id: 5
   },
 //   {
 //     title: 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue.',
