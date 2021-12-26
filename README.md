@@ -65,5 +65,6 @@ The URL of the GitHub repository. Give the repository a unique name and include 
 Developer Notes
 Added generated seed files to demonstrate comments, posts, and users on this web application.
 
+Comments can be added and cannot be deleted or edited. will be a future implementation. 
 
 
