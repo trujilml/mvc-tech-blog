@@ -7,6 +7,10 @@
     --maincolor6: rgba(77, 184, 255, 0.822);
     --maincolor7: rgba(64, 151, 209, 0.849);
     --maincolor8: rgb(238, 238, 238);
+    --maincolor9: rgb(182, 3, 3);
+    --maincolor10:rgba(214, 85, 85, 0.801);
+    --maincolor11: rgb(1, 85, 141);
+    --maincolor12: rgba(184, 227, 255, 0.637);
     --standardfontstyle1: bold;
     --standardborderradius: 5px; 
 }
@@ -146,4 +150,114 @@ header h1 {
     display: flex;
     border-bottom: 1px solid var(--maincolor8);
     justify-content: center;
+}
+
+.site-name {
+    margin-bottom: 10px;
+    padding: 0px 10px;
+    border-style: double;
+}
+
+main {
+    flex: 1;
+    padding: 2% 4%;
+}
+
+.btn-no-style {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 100%;
+    font-weight: bold;
+    transition: color .1s;
+    margin-left: 16px;
+}
+
+.btn-no-style:hover {
+    background: none;
+}
+
+.delete-post-btn {
+    background-color: var(--maincolor9);
+}
+
+.delete-post-btn:hover {
+    background-color: var(--maincolor10);
+}
+
+.post {
+    margin-bottom: 2%;
+    line-height: 150%;
+    border: 3px solid var(--maincolor2);
+}
+
+.post .title span {
+    font-style: italic;
+    font-size: 90%;
+    color: var(--maincolor11);
+}
+
+.edit-link {
+    display: block;
+    margin: -1.5% 0 2% 0;
+    color: var(--maincolor7);
+}
+
+.comment-form {
+    margin-bottom: 5%;
+}
+
+.comment {
+    padding: 1%;
+    margin-bottom: 1%;
+}
+
+.comment:nth-child(odd) {
+    background-color: var(--maincolor12);
+}
+
+.comment .meta {
+    font-size: 90%;
+    margin-bottom: .5%;
+    opacity: .6;
+}
+
+.new-post-form input {
+    width: 300px; 
+}
+
+.edit-post-form {
+    margin-bottom: 5%;
+}
+
+#comment-subtitle {
+    font-size: 12px;
+    font-style: italic;
+}
+
+.new-post-section {
+    display: flex;
+    justify-content: center;
+}
+
+#create-new-post {
+    width: 15%;
+}
+
+.sign-in-link, .login-link {
+    color: var(--maincolor7);
+}
+
+.form-heading h1, .form-heading h2 {
+    color: var(--maincolor3);
+}
+
+.login-form, .signup-form, .post-content, .post-title-section {
+    padding: 10px 10px 0px 0px;
+}
+
+.entry-field, .login-signup-btn, .btn, #post-title {
+    width: 100%;
 }
