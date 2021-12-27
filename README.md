@@ -77,7 +77,7 @@ These were the programs used to test and generate the web link prior to and afte
 
 ## Developer Notes and Further Ideas
 - Developer Notes
-Seed files of the Comment, User, and Post model were added for testing purposes to test the website's functionality. To view and test the Seed files, review the [Installation](#Installation) tab above. 
+- Seed files of the Comment, User, and Post model were added for testing purposes to test the website's functionality. To view and test the Seed files, review the [Installation](#Installation) tab above. 
 
 - Further Ideas
-Comments on Tech Blog can only be added. They cannot be deleted or edited as this time. This is considered for a future site implementation.
+- Comments on Tech Blog can only be added. They cannot be deleted or edited as this time. This is considered for a future site implementation.
