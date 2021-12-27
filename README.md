@@ -54,45 +54,28 @@ https://github.com/trujilml/mvc-tech-blog
 
 ## Developed With
 The application follows the Model-View-Controller paradigm.
-- Express-Handlebars - 
-- MySQL2 - 
-- Sequelize - 
-- Express.js - API 
+- Express-Handlebars - Handlebars.js package used with Express to generate HTML pages and render content from the database and models. Views in the MVC paradigm. -  https://www.npmjs.com/package/express-handlebars
+- MySQL2 - Continuation package of MySQL. Relational database management system that ensures fast connection to host servers and web databases. MySQL2 is used with the MVC to connect to the Model databases alongside the use of Sequelize. - https://www.npmjs.com/package/mysql2
+- Sequelize - Promise-based Node.js ORM for the MySQL server. Used alongside MySQL2 to connect with the database to the Model databases. - https://sequelize.org/
+- Express.js API - Web framework for Node.js, connected with MySQL 2 and Sequelize. The Controllers for the MVC paradigm that demonstrates the routes connected with the models and database - https://expressjs.com/
 
-- Dotenv 
-- bcrypt 
-- express-session 
-- connect-session-sequelize 
+- dotenv - An npm package that protects and stores login credentials from other users through the .env file and MySQL2. - https://www.npmjs.com/package/dotenv
+- bcrypt - An npm package used to hash the passwords from users. - https://www.npmjs.com/package/bcrypt
+- express-session - Node.js module/npm package that stores session data on the client in a cookie (viewed in Inspect/Application when using Google Developer Tools). When time on the site is idle (for this application, after 30 minutes - `view server.js file`), the cookie will expire and the user will have to log in again to start a new session. -  https://www.npmjs.com/package/express-session 
+- connect-session-sequelize - A SQL session storage using Sequelize to authenticate a user's session on the webpage. Syncs and stores session time and allows for expiration of cookies time when used alongside express-session. - https://www.npmjs.com/package/connect-session-sequelize
 
- 
--  Nodemon 
-Developer Notes
-Added generated seed files to demonstrate comments, posts, and users for testing purposes. To generate, run `npm run seeds` in your terminal with Nodemon installated to view the test examples.
+These were the programs used to test and generate the web link prior to and after its deployment.
+- Insomnia - Collaborative API Client and Design Tool used to build and test APIs with an active server. Was used to test format of the webpage with sample models and later seed files to present on the webpage. - https://insomnia.rest/products/insomnia
+- Heroku - Cloud platform used to deploy this application in a web link from its respective CLI. 
+- JawsDB MySQL - A Heroku add-on for providing a fully functional MySQL Database server for use with this application. Helped generate databases and server to start the deployed website.
 
-
-    Programs Used to generate deployed web link 
-Heroku 
-JawsDB MySQL - for site deployment and mysql 
-
--JavaScript 
--CSS
--HTML
-
-
-
-Getting Started
-Your application’s folder structure must follow the Model-View-Controller paradigm. You’ll need to use the express-handlebars (Links to an external site.) package to use Handlebars.js for your Views, use the MySQL2 (Links to an external site.) and Sequelize (Links to an external site.) packages to connect to a MySQL database for your Models, and create an Express.js API for your Controllers.
-
-You’ll also need the dotenv package (Links to an external site.) to use environment variables, the bcrypt package (Links to an external site.) to hash passwords, and the express-session (Links to an external site.) and connect-session-sequelize (Links to an external site.) packages to add authentication.
-
-NOTE
-The express-session (Links to an external site.) package stores the session data on the client in a cookie. When you are idle on the site for more than a set time, the cookie will expire and you will be required to log in again to start a new session. This is the default behavior and you do not have to do anything to your application other than implement the npm package.
-
-How to Submit the Challenge
-You are required to submit BOTH of the following for review:
+-  Nodemon - Tool that helps develop node.js applications by automatically restarting the node application when file changes are detected. Helped with site testing and seed files. - https://www.npmjs.com/package/nodemon 
+- JavaScript - Front-end and Back-end development
+- Node.js - Back-end development
+- CSS - Front-end development, used with HTML and Handlebars to generate site design
+- HTML - Front-end development, used with Handlebars to generate site format and CSS to generate site design and its responsive format
 
 ## Developer Notes and Further Ideas
-
 - Developer Notes
 Seed files of the Comment, User, and Post model were added for testing purposes to test the website's functionality. To view and test the Seed files, review the [Installation](#Installation) tab above. 
 
